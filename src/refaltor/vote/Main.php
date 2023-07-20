@@ -13,6 +13,7 @@ class Main extends PluginBase
     {
         self::$instance = $this;
         $this->saveResource('config.yml');
+        $this->getServer()->getCommandMap()->register($this->getName(), new voteCommand($this));
     }
 
     public static function getInstance(): self
