@@ -16,7 +16,7 @@ class vote extends Command
     {
         $this->plugin = $plugin;
         parent::__construct("vote", "Vote for MineCubeMC");
-        $this->setPermission("hyperiummc.player");
+        $this->setPermission("vote.command.use");
     }
 
     public function execute(CommandSender $sender, string $commandLabel, array $args)
