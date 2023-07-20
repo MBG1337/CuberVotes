@@ -9,7 +9,7 @@ class Main extends PluginBase
 {
     private static $instance;
 
-    public function onEnable()
+    public function onEnable(): void
     {
         self::$instance = $this;
         $this->saveResource('config.yml');
