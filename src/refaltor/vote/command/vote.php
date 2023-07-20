@@ -15,8 +15,8 @@ class vote extends Command
     public function __construct(Main $plugin)
     {
         $this->plugin = $plugin;
-        $array = $plugin->getConfig()->get('command');
-        parent::__construct($array['usage'], $array['description']);
+        parent::__construct("kbffa", "Play an amazing sumo FFA minigame");
+        $this->setPermission("hyperiummc.player");
     }
 
     public function execute(CommandSender $sender, string $commandLabel, array $args)
