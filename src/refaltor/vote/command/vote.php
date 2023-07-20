@@ -15,7 +15,7 @@ class vote extends Command
     public function __construct(Main $plugin)
     {
         $this->plugin = $plugin;
-        parent::__construct("kbffa", "Play an amazing sumo FFA minigame");
+        parent::__construct("vote", "Vote for MineCubeMC");
         $this->setPermission("hyperiummc.player");
     }
 
