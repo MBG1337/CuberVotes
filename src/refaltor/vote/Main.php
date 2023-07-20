@@ -17,7 +17,8 @@ class Main extends PluginBase
         $this->getServer()->getCommandMap()->register('vote', new vote($this));
     }
 
-    public static function getInstance(): self{
+    public static function getInstance(): self
+    {
         return self::$instance;
     }
 }
