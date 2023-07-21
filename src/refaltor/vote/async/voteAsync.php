@@ -32,7 +32,7 @@ class voteAsync extends AsyncTask
     public function onCompletion(Server $server): void{
 
         $checking = $this->getResult();
-        $player = $server->getPlayer($this->player);
+        $player = $server->getPlayerExact($this->player);
         $plugin = Main::getInstance();
         if($player === null) return;
         switch($checking){
